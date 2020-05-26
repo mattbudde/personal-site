@@ -1,9 +1,9 @@
 {
   "title": "Matt Budde",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
-  "description": "Delog, a GatsbyJS and Netlify CMS starter for Designers and Developers",
+  "description": "Matthew Budde",
   "home": {
-    "title": "Hi! I'm Matt",
-    "description": "Rambling's of a JS loving tester"
+    "title": "Hi!",
+    "description": "Welcome to my digital garden, full of ramblings on JS and testing."
   }
 }
