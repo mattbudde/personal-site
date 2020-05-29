@@ -3,7 +3,7 @@ template: BlogPost
 path: /another-post
 date: 2020-05-29T14:07:22.019Z
 title: Another post
-thumbnail: /assets/image-5.jpg
+thumbnail: /assets/billy-huynh-W8KTS-mhFUE-unsplash.jpg
 ---
 # Tum mea subvolat saxoque
 
