@@ -7,10 +7,11 @@ export default () => (
       <label>
         <input
           type="checkbox"
+          aria-label="theme-changer"
           className="theme-changer"
           onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
           checked={theme === 'dark'}
-        />{' '}
+        />
         <div className="mode-container">
           <i className="gg-sun"></i>
           <i className="gg-moon"></i>

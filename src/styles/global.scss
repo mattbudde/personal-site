@@ -215,6 +215,12 @@ a {
   grid-gap: 32px;
   margin-top: 32px;
 }
+.project-grids {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-gap: 32px;
+  margin-top: 32px;
+}
 .card {
   display: grid;
   background-color: var(--card-bg);

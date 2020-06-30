@@ -2,18 +2,27 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import ProjectCard from '../components/projectCard';
 
 const ProjectsPage = ({ data: { site } }) => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact — {site.siteMetadata.title}</title>
+        <title>Work — {site.siteMetadata.title}</title>
         <meta
           name="description"
-          content={'Contact page of ' + site.siteMetadata.description}
+          content={'Work page of ' + site.siteMetadata.description}
         />
       </Helmet>
-      <div className="grids">Projects page</div>
+      <div className="hero-header">
+        <div className="headline">Work</div>
+        <div className="primary-content">
+          What i like to work on in my spare time!
+        </div>
+      </div>
+      <div className="project-grids">
+        <ProjectCard />
+      </div>
     </Layout>
   );
 };
