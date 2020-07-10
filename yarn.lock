@@ -6148,7 +6148,7 @@ gatsby-plugin-manifest@^2.4.1:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-plugin-netlify-cms@^4.1.38:
+gatsby-plugin-netlify-cms@^4.3.11:
   version "4.3.11"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.3.11.tgz#c576d9a293b83e6dccc17c0f1f55c99582be8aa8"
   integrity sha512-RXObpig8ixXwqEDWux4zoEmNgtuo6c852IlwM9n5ai+ZApGSID+zpS2c+iK8LWQd0LhXxJM6Hyhk8psLuA9CDQ==
@@ -6381,7 +6381,7 @@ gatsby-transformer-remark@^2.6.53:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby@^2.21.0:
+gatsby@^2.24.1:
   version "2.24.1"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.1.tgz#69673817e354ef5c4db1cb49b6b9a3ae35c65142"
   integrity sha512-aqFfx+Vj3kBhS17tgL1LrkMzip2Xctd3lCj+pogCGV9GCkg6wOqW2uOEqWeoiCNq09sPuwv3GNB8sbEFoQ/2DA==
@@ -9700,7 +9700,7 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-netlify-cms-app@^2.11.13:
+netlify-cms-app@^2.12.16:
   version "2.12.16"
   resolved "https://registry.yarnpkg.com/netlify-cms-app/-/netlify-cms-app-2.12.16.tgz#e5b1823c010900526913556613ef8e1fe2634cd1"
   integrity sha512-uSPCb4bfK04TEAQGspZykOYk0/UUczByI3G3DlMzrEPh40Kw2Z/EA4ETDyTiMNzhZNBoHtVQSFvw/UhwFgoRtw==
