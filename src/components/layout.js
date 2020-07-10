@@ -18,13 +18,13 @@ export default ({ children }) => {
   );
 
   return (
-    <div className="site-wrapper">
-      <header className="site-header">
+    <main className="main">
+      <h1 className="site-header">
         <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
         </div>
         <Navigation />
-      </header>
+      </h1>
       {children}
       <footer className="site-footer">
         <p>
@@ -35,6 +35,6 @@ export default ({ children }) => {
           and <a href="https://gatsbyjs.org">Gatsby</a>
         </p>
       </footer>
-    </div>
+    </main>
   );
 };
