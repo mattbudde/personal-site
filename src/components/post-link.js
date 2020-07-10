@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link } from "gatsby";
+import { motion } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+  visible: { opacity: 1 }
 };
 
 const PostLink = ({ post }) => (

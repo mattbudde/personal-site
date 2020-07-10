@@ -5,6 +5,7 @@ date: 2020-05-29T14:07:22.019Z
 title: Another post
 thumbnail: /assets/billy-huynh-W8KTS-mhFUE-unsplash.jpg
 ---
+
 # Tum mea subvolat saxoque
 
 ## Utque et Hippodamas bene
@@ -24,12 +25,39 @@ Saxum gelidum abstinet ab tibi ait ergo vidit Argum, sinu **ordine spatiosum**.
 Deorum omnia Actaeon consilium annoso, fata quam femineae deceptus fletus;
 reliquit.
 
-    dataExpression.packEncoding(zero_plug(xWord(horse_character, -5),
-            characterText), 1);
-    microcomputer_frame_streaming = 4 * adBot(pptp_oem_pup, screenshot,
-            compression * webDvrNavigation);
-    engine = 1 - wiki_scrolling_design(function_constant, camera) +
-            graphicsQwertyDelete;
+```js
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query HeadingQuery {
+        site {
+          siteMetadata {
+            home {
+              title
+              description
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <div className="hero-header">
+        <div className="headline">{data.site.siteMetadata.home.title}</div>
+        <div
+          className="primary-content"
+          dangerouslySetInnerHTML={{
+            __html: data.site.siteMetadata.home.description
+          }}
+        />
+      </div>
+    )}
+  />
+);
+
+```
 
 ## Audet tolleret est adfata silvarum forma
 
@@ -42,7 +70,7 @@ quem et indignis nitor ramis comes; **exercet**.
 
 Aliqua pectoraque ferumque, nec deorum, ut Cephalus poenaededidit sicut, habe.
 Carebis Pallas, in quoque, si que prosilit undas ignis, foret bitumineae facies
-cervicibus dolore saepe. *Protinus abit*, placidum fata ut exarsit [lacrimavit
+cervicibus dolore saepe. _Protinus abit_, placidum fata ut exarsit [lacrimavit
 culpa](http://armanisi.net/) tu Oceano nondum. Natos celebrandaque nulloque non
 tuum horto manu ignotae, excidit Phoronidos trado, ignotis. Periclo Hypsea Combe
 stantes.

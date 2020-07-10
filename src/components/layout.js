@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import Navigation from '../components/navigation';
-import 'prismjs/themes/prism-okaidia.css';
-import '../styles/layout.css';
+import React from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import Navigation from "../components/navigation";
+import "prismjs/themes/prism-okaidia.css";
+import "../styles/layout.css";
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -28,10 +28,10 @@ export default ({ children }) => {
       {children}
       <footer className="site-footer">
         <p>
-          &copy; {new Date().getFullYear()} Matt Budde &bull; Crafted with{' '}
+          &copy; {new Date().getFullYear()} Matt Budde &bull; Crafted with{" "}
           <span role="img" aria-label="love">
             ❤️
-          </span>{' '}
+          </span>{" "}
           and <a href="https://gatsbyjs.org">Gatsby</a>
         </p>
       </footer>

@@ -1,8 +1,8 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import ProjectCard from '../components/projectCard';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import ProjectCard from "../components/projectCard";
 
 const ProjectsPage = ({ data: { site } }) => {
   return (
@@ -11,7 +11,7 @@ const ProjectsPage = ({ data: { site } }) => {
         <title>Work — {site.siteMetadata.title}</title>
         <meta
           name="description"
-          content={'Work page of ' + site.siteMetadata.description}
+          content={"Work page of " + site.siteMetadata.description}
         />
       </Helmet>
       <div className="hero-header">
