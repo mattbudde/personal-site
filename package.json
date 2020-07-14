@@ -31,6 +31,7 @@
     "axe-core": "^3.5.5",
     "cypress": "^4.10.0",
     "cypress-axe": "^0.8.1",
+    "husky": "^4.2.5",
     "netlify-plugin-cypress": "^1.3.11",
     "prettier": "^1.19.1",
     "start-server-and-test": "^1.11.0"
@@ -50,5 +51,10 @@
     "cy:open": "$(npm bin)/cypress open",
     "cy:run": "$(npm bin)/cypress run",
     "cy:ci": "start-server-and-test develop http://localhost:8000 cy:run"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   }
 }
