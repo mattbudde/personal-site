@@ -46,6 +46,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "clean:tests": "rm -rf cypress/screenshots && rm -rf cypress/videos",
     "cy:open": "$(npm bin)/cypress open",
     "cy:run": "$(npm bin)/cypress run",
     "cy:ci": "start-server-and-test develop http://localhost:8000 cy:run"

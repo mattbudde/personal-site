@@ -31,6 +31,7 @@ body.light {
   --contact-bg: #f7f8fe;
   --contact-bdr: #d3d6e7;
   --input-bg: var(--background);
+  --footer-text: var(--color1);
 }
 body.dark {
   --primary-color: var(--color4);
@@ -51,6 +52,7 @@ body.dark {
   --contact-bg: var(--card-shadow);
   --contact-bdr: var(--card-bg);
   --input-bg: var(--card-bg);
+  --footer-text: rgba(255, 255, 255, 0.88);
 }
 /* System Fonts as used by Medium and WordPress */
 body {
@@ -261,7 +263,7 @@ a {
 .site-footer {
   text-align: center;
   margin: 90px 0 16px;
-  color: #666;
+  color: var(--footer-text);
   a {
     font-weight: 700;
   }
