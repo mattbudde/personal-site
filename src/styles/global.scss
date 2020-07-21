@@ -34,12 +34,12 @@ body.light {
   --footer-text: var(--color1);
 }
 body.dark {
-  --primary-color: var(--color4);
+  --primary-color: rgba(255, 255, 255, 0.88);
   --primary-text-color: #fff;
-  --featured-bg: var(--color4);
+  --featured-bg: var(--color1);
   --featured-text: #fff;
   --secondary-color: var(--color3);
-  --background: var(--color2);
+  --background: var(--color1);
   --text-color: rgba(255, 255, 255, 0.88);
   --text-secondary-color: rgba(255, 255, 255, 0.66);
   --site-header: var(--background);
@@ -61,7 +61,7 @@ body {
   color: var(--text-color);
 }
 a {
-  color: var(--color4);
+  color: var(--primary-color);
   text-decoration: underline;
   &:hover {
     text-decoration: double;
