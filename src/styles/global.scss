@@ -19,9 +19,9 @@ body.light {
   --featured-bg: var(--color1);
   --featured-text: #fff;
   --secondary-color: var(--color4);
-  --background: #fff;
+  --background: rgba(255, 255, 255, 0.88);
   --site-header: var(--background);
-  --card-bg: #fff;
+  --card-bg: rgba(255, 255, 255, 0.88);
   --card-bdr: #eee;
   --card-shadow: #d5d5d5;
   --btn-bg: var(--background);
@@ -32,14 +32,16 @@ body.light {
   --contact-bdr: #d3d6e7;
   --input-bg: var(--background);
   --footer-text: var(--color1);
+  --gradient-one: hsl(336, 97%, 65%);
+  --gradient-two: hsl(6, 89%, 67%);
 }
 body.dark {
-  --primary-color: var(--color4);
+  --primary-color: rgba(255, 255, 255, 0.88);
   --primary-text-color: #fff;
-  --featured-bg: var(--color4);
+  --featured-bg: var(--color1);
   --featured-text: #fff;
   --secondary-color: var(--color3);
-  --background: var(--color2);
+  --background: var(--color1);
   --text-color: rgba(255, 255, 255, 0.88);
   --text-secondary-color: rgba(255, 255, 255, 0.66);
   --site-header: var(--background);
@@ -53,18 +55,34 @@ body.dark {
   --contact-bdr: var(--card-bg);
   --input-bg: var(--card-bg);
   --footer-text: rgba(255, 255, 255, 0.88);
+  --gradient-one: hsl(98, 100%, 62%);
+  --gradient-two: hsl(204, 100%, 59%);
 }
-/* System Fonts as used by Medium and WordPress */
+
 body {
   font-family: $font-family;
   background-color: var(--background);
   color: var(--text-color);
 }
 a {
-  color: var(--color4);
-  text-decoration: underline;
+  background: linear-gradient(
+    to right,
+    var(--gradient-one),
+    var(--gradient-two)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
   &:hover {
-    text-decoration: double;
+    background: linear-gradient(
+      to right,
+      var(--gradient-two),
+      var(--gradient-one)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 p {
@@ -81,6 +99,14 @@ p {
   }
 }
 .navigation {
+  background: linear-gradient(
+    to right,
+    var(--gradient-one),
+    var(--gradient-two)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -109,10 +135,14 @@ p {
   align-items: center;
 }
 .site-title a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 900;
-  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    var(--gradient-one),
+    var(--gradient-two)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-header {
   padding: 0 0 64px;

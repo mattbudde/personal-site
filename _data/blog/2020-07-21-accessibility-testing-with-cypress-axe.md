@@ -6,9 +6,8 @@ title: Accessibility testing with Cypress & aXe
 metaDescription: An introduction to automated accessibility testing with Cypress
 thumbnail: /assets/david-travis-wc6mj0krzgw-unsplash-1-.jpg
 ---
+
 In this post we will discuss automated accessibility (a11y) testing using [Cypress.io](https://cypress.io) and the [cypress-axe](https://github.com/avanslaars/cypress-axe) library and how you can integrate this into you application, blog, website etc..
-
-
 
 # First let's get everything setup.
 
@@ -57,7 +56,7 @@ Go ahead and exit out of Cypress for now, as we need to wire a few things up in 
 Go to the `support/commands.js` file and just below the comment block we will import cypress-axe:
 
 ```jsx
-import "cypress-axe"
+import "cypress-axe";
 ```
 
 This sets up the library to be loaded by the `index.js` file (in the same folder) before our tests run to ensure we have everything we need. In-fact you will see that our `commands.js` is imported by the `index.js` file.
@@ -67,35 +66,33 @@ Now time for the fun bit. Let's write our first test. Create a file in the `inte
 Let's create our `Describe` block which allows us to logically group our tests together like so:
 
 ```jsx
-describe("Accessibility tests", () => {
-
-});
+describe("Accessibility tests", () => {});
 ```
 
 Now we can create our `BeforeEach` which like it sounds, will run before each test in this file.
 
 ```jsx
 describe("Accessibility tests", () => {
-    beforeEach(() => {
-      cy.visit("https://google.com") // visit the google homepage
-      cy.injectAxe() // inject aXe into the page
-    });
+  beforeEach(() => {
+    cy.visit("https://google.com"); // visit the google homepage
+    cy.injectAxe(); // inject aXe into the page
   });
+});
 ```
 
 We have now setup our tests to navigate to the Google homepage and to inject aXe into the page. Next we setup our actual test using the `it` keyword as shown:
 
 ```jsx
 describe("Accessibility tests", () => {
-    beforeEach(() => {
-      cy.visit("https://google.com")
-      cy.injectAxe()
-    });
-
-    it("Has no detectable accessibility violations on load", () => {
-      cy.checkA11y(); // checks and asserts that no violations occurred
-    });
+  beforeEach(() => {
+    cy.visit("https://google.com");
+    cy.injectAxe();
   });
+
+  it("Has no detectable accessibility violations on load", () => {
+    cy.checkA11y(); // checks and asserts that no violations occurred
+  });
+});
 ```
 
 Now our test will navigate to the google homepage, inject aXe and all it's commands and magic, then check that no accessibility violations occurred on that page occurred.

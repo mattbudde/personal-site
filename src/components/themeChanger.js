@@ -9,8 +9,8 @@ export default () => (
           type="checkbox"
           aria-label="theme-changer"
           className="theme-changer"
-          onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-          checked={theme === "dark"}
+          onChange={e => toggleTheme(e.target.checked ? "light" : "dark")}
+          checked={theme === "light"}
         />
         <div className="mode-container">
           <i className="gg-sun"></i>
