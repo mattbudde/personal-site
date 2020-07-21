@@ -61,11 +61,15 @@ body {
   color: var(--text-color);
 }
 a {
-  color: var(--primary-color);
-  text-decoration: none;
+  color: var(--color4);
+  text-decoration: underline;
   &:hover {
-    text-decoration: underline;
+    text-decoration: double;
   }
+}
+p {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .main {
   padding: 32px;
