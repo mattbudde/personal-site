@@ -3,10 +3,7 @@ template: BlogPost
 path: /a11y-cypress-testing
 date: 2020-07-21T10:12:39.791Z
 title: Accessibility testing with Cypress & aXe
-metaDescription: In this post we will discuss automated accessibility (a11y)
-  testing using [Cypress.io](https://cypress.io) and the
-  [cypress-axe](https://github.com/avanslaars/cypress-axe) library and how you
-  can integrate this into you application, blog, website etc..
+metaDescription: An introduction to automated accessibility testing with Cypress
 thumbnail: /assets/david-travis-wc6mj0krzgw-unsplash-1-.jpg
 ---
 In this post we will discuss automated accessibility (a11y) testing using [Cypress.io](https://cypress.io) and the [cypress-axe](https://github.com/avanslaars/cypress-axe) library and how you can integrate this into you application, blog, website etc..
